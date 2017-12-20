@@ -43,9 +43,9 @@ TableName: 'student',
 Item: { // a map of attribute name to AttributeValue
 
     sid: 123,
-    firstname : { 'S': 'abc' },
-    lastname : { 'S': 'xyz' },
-    address : {'S': 'pqr' },
+    firstname : { 'S': 'greatprashanna' },
+    lastname : { 'S': 'rai' },
+    address : {'S': 'ktm' },
     ReturnValues: 'NONE', // optional (NONE | ALL_OLD)
     ReturnConsumedCapacity: 'NONE', // optional (NONE | TOTAL | INDEXES)
     ReturnItemCollectionMetrics: 'NONE', // optional (NONE | SIZE)
@@ -61,7 +61,7 @@ docClient.put(params, function(err, data) {
 var params = {
     TableName: 'student',
     Key: { 
-        sid: 1234, //(string | number | boolean | null | Binary)
+        sid: 1234, 
         // more attributes...
 
     },
