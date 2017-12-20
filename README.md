@@ -1,6 +1,8 @@
 # aws-dynamodb-local-lab
 docker pull deangiberson/aws-dynamodb-local
-docker run -it -p 8000:8000 deangiberson/aws-dynamodb-local 
+
+docker run -it -p 8000:8000 deangiberson/aws-dynamodb-local
+ 
 goto http://<container_ip>:8000/shell
 
 
